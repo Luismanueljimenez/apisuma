@@ -18,6 +18,14 @@ app.get('/', (req, res) => {
     );
 })
 
+//Nuestro primer WS Get  // A ESTAS RUTAS SE CONOCEN COMO END
+app.get('/hola', (req, res) => {    
+    res.json(
+        {
+            "Title": "CAMBIOS"
+        }
+    );
+})
 
 // rutas  responde el servidor a esta  ruta
 app.get('/mensaje/mensaje1', (req, res) => {    
